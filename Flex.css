@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
+:root {
+    --light-green: #4F8E0C;
+    --dark-green: #0E4035;
+    --dark-blue: #00002B;
+    --red: #F23C06;
+    --orange: #F89C12;
+    --gray: #808080;
+    --light-gray: #E9ECEF;
+    --white: #ffffff;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     margin-left: 60px;
@@ -29,7 +40,7 @@ body {
 }
 
 .s-title {
-    color: #4F8E0C;
+    color: var(--light-green);
     font-weight: 400;
 }
 
@@ -48,11 +59,11 @@ body {
 .line {
     height: 1px;
     width: 24px;
-    background: #4F8E0C;
+    background: var(--light-green);
 }
 
 .circle-1 {
-    background: #F23C06;
+    background: var(--red);
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50px;
@@ -60,7 +71,7 @@ body {
 }
 
 .circle-2 {
-    background: #4F8E0C;
+    background: var(--light-green);
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50px;
@@ -68,7 +79,7 @@ body {
 }
 
 .circle-3 {
-    background: #F89C12;
+    background: var(--orange);
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50px;
@@ -80,7 +91,7 @@ body {
 }
 
 .b-title {
-    color: #00002B;
+    color: var(--dark-blue);
     font-weight: 600;
     line-height: 120%;
     font-size: 32px;
@@ -92,7 +103,7 @@ body {
     color: white;
     justify-content: space-around;
     align-items: center;
-    background: #4F8E0C;
+    background: var(--light-green);
     border-radius: 100px;
     text-align: start;
     font-weight: 700;
@@ -120,7 +131,7 @@ body {
 }
 
 .features-right-row.top {
-    border-bottom: 0.2px solid #E9ECEF;
+    border-bottom: 0.2px solid var(--light-gray);
 }
 
 .five {
@@ -129,7 +140,7 @@ body {
 }
 
 .five.first {
-    border-right: 0.2px solid #E9ECEF;
+    border-right: 0.2px solid var(--light-gray);
 }
 
 .five.second {
@@ -156,7 +167,7 @@ body {
 } */
 
 .left-title {
-    color: #4F8E0C;
+    color: var(--light-green);
     font-weight: 500;
     font-size: 18px;
     margin-left: 12px;
@@ -165,7 +176,7 @@ body {
 .left-para {
     width: 80%;
     margin-left: 43px;
-    color: #808080;
+    color: var(--gray);
 }
 
 .wallet-title {
@@ -174,14 +185,14 @@ body {
 }
 
 .s-title-wallet {
-    color: #0E4035;
+    color: var(--dark-green);
     font-weight: 400;
 }
 
 .line-wallet {
     height: 1px;
     width: 24px;
-    background: #0E4035;
+    background: var(--dark-green);
 }
 
 .circle-2-wallet {
@@ -189,17 +200,17 @@ body {
     height: 0.5rem;
     border-radius: 50px;
     margin: 0.1rem;
-    background: #0E4035;
+    background: var(--dark-green);
 }
 
 .para-wallet {
-    color: #808080;
+    color: var(--gray);
     width: 60%;
     margin-bottom: 40px;
 }
 
 .get-started.dark {
-    background: #0E4035;
+    background: var(--dark-green);
 }
 
 .img-wallet {
