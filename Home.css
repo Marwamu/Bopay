@@ -2,6 +2,7 @@
 
 :root {
     --light-green: #4F8E0C;
+    --blue: #1598D1;
     --dark-green: #0E4035;
     --dark-blue: #00002B;
     --red: #F23C06;
@@ -11,18 +12,156 @@
     --white: #ffffff;
 }
 
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    margin-left: 60px;
+    margin: 0 100px;
     font-size: 14px;
     font-weight: 400;
 }
+
+button {
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+    border: none;
+    color: var(--white);
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bt-login {
+    all: unset;
+    font-size: 14px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 700;
+    color: var(--blue);
+
+}
+
+.bt-signup {
+    color: var(--white);
+    background: linear-gradient(to right, #4F8E0C, #1598D1);
+    padding: 12px;
+    margin-left: 1.5rem;
+}
+
+.invoicing {
+    height: 100vh;
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 5rem;
+}
+
+.invoice-title {
+    position: absolute;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.invoice-images {
+
+    display: flex;
+    height: 50%;
+    /* margin-top: 400px; */
+}
+
+/* .text {
+    height: 40%;
+    width: 0%;
+} */
+
+.images {
+    position: relative;
+    width: 70%;
+}
+
+.b-title-invoice {
+    width: 50%;
+    color: var(--dark-blue);
+    font-weight: 600;
+    line-height: 120%;
+    font-size: 32px;
+}
+
+.container-title-invoice {
+    width: 60%;
+}
+
+.blue-reg {
+    width: 800px;
+    height: 100%;
+    background: linear-gradient(90deg, #58B4C9 0%, #77C5D8 96.28%);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(14, 64, 53, 0.16);
+    position: absolute;
+}
+
+.img-blue {
+    /* position: relative; */
+    /* bottom: rem; */
+    height: 100%;
+}
+
+.s-title-invoice {
+    color: var(--blue);
+}
+
+.para-invoice {
+    color: var(--gray);
+    width: 70%;
+    margin-bottom: 32px;
+}
+
+.line-invoice {
+    height: 1px;
+    width: 24px;
+    background: var(--blue);
+}
+
+.circle-1-invoice {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50px;
+    margin: 0.1rem;
+    background: var(--blue);
+}
+
+.get-started.blue {
+    background: var(--blue);
+}
+
 
 .features,
 .wallet {
     height: 100vh;
     display: flex;
-    margin: 0 60px;
     justify-content: center;
     align-items: center;
 }
@@ -62,6 +201,10 @@ body {
     background: var(--light-green);
 }
 
+.style-title li:first-of-type {}
+
+.style-title li:nth-of-type(2) {}
+
 .circle-1 {
     background: var(--red);
     width: 0.5rem;
@@ -99,17 +242,9 @@ body {
 
 .get-started {
     display: flex;
-    border: none;
-    color: white;
     justify-content: space-around;
     align-items: center;
     background: var(--light-green);
-    border-radius: 100px;
-    text-align: start;
-    font-weight: 700;
-    width: 160px;
-    height: 40px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .arrow-svg {
@@ -185,6 +320,7 @@ body {
 }
 
 .s-title-wallet {
+    font-family: 'Product Sans', sans-serif;
     color: var(--dark-green);
     font-weight: 400;
 }
