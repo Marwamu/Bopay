@@ -632,8 +632,8 @@ section {
 
     .features-title {
         text-align: start;
-        width: 30%;
-        margin-right: 4rem;
+        /* width: 30%; */
+        /* margin-right: 4rem; */
     }
 
     .left-title {
@@ -728,7 +728,7 @@ section {
 
 
 
-    /* 
+/* 
  // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { ... }
 
