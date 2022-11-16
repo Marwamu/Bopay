@@ -16,35 +16,48 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body,
+html {
+    width: 100%;
+    margin: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 0 150px;
+    /* margin: 0 30px; */
     font-size: 14px;
     font-weight: 400;
 }
+
 
 button {
     font-family: 'Product Sans', sans-serif;
     font-weight: 700;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 100px;
-    width: 160px;
-    height: 40px;
-    font-size: 14px;
+
+    font-size: 12px;
     border: none;
     color: var(--white);
 }
 
 nav {
-    width: 100%;
-    margin: 0;
+    margin: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 10px;
+    /* width: 100%; */
 }
 
 .left {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
+}
+
+.logo {
+    width: 100px;
 }
 
 .right {
@@ -55,7 +68,7 @@ nav {
 
 .bt-login {
     all: unset;
-    font-size: 14px;
+    font-size: 12px;
     font-family: 'Product Sans', sans-serif;
     font-weight: 700;
     color: var(--blue);
@@ -63,10 +76,15 @@ nav {
 }
 
 .bt-signup {
+    max-width: 140px;
     color: var(--white);
     background: linear-gradient(to right, #4F8E0C, #1598D1);
-    padding: 12px;
-    margin-left: 1.5rem;
+    padding: 8px;
+    margin-left: 1rem;
+}
+
+section {
+    margin: 0 40px;
 }
 
 .invoicing {
@@ -79,45 +97,32 @@ nav {
 
 .invoice-title {
     /* position: absolute; */
-    height: 50%;
+    text-align: center;
+    /* height: 50%; */
     display: flex;
     justify-content: space-between;
 
 }
 
 .invoice-images {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    height: 45%;
+    display: none;
 }
 
 .b-title-invoice {
-    width: 50%;
+    /* width: 50%; */
+    margin: 0;
     color: var(--dark-blue);
     font-weight: 600;
     line-height: 120%;
     font-size: 32px;
 }
 
-.container-title-invoice {
-    width: 90%;
-}
-
 .images {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #58B4C9 0%, #77C5D8 96.28%);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(14, 64, 53, 0.16);
+    display: none;
 }
 
 .img-blue {
+    /* display: none; */
     height: 100%;
 }
 
@@ -141,10 +146,13 @@ nav {
 }
 
 .img-yellow {
+    position: absolute;
     height: 100%;
+    bottom: 0;
 }
 
 .images-pink {
+    position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -157,7 +165,9 @@ nav {
 }
 
 .img-pink {
+    position: absolute;
     height: 100%;
+    bottom: 0;
 }
 
 .images-green {
@@ -173,6 +183,8 @@ nav {
 }
 
 .img-green {
+    position: absolute;
+    bottom: 0;
     height: 100%;
 }
 
@@ -203,8 +215,8 @@ nav {
 
 .para-invoice {
     color: var(--gray);
-    width: 70%;
-    margin-bottom: 32px;
+    /* width: 70%; */
+    /* margin-bottom: 32px; */
 }
 
 .line-invoice {
@@ -223,7 +235,10 @@ nav {
 
 .get-started.blue {
     background: var(--blue);
+    margin: 24px auto;
 }
+
+@media (min-width: 50rem) {}
 
 .wallet {
     height: 100vh;
@@ -247,7 +262,7 @@ nav {
 
 .style-titles {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -314,17 +329,24 @@ nav {
     font-size: 32px;
 }
 
+.text {
+    text-align: center;
+}
+
 .get-started {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background: var(--light-green);
-    margin-top: 48px;
+    text-align: center;
+    /* background: var(--light-green); */
+    /* margin-top: 48px; */
+    padding: 8px;
 }
 
 .arrow-svg {
     background-color: white;
     padding: 4px;
+    margin-left: 10px;
     height: 0.5rem;
     width: 0.5rem;
     border-radius: 50px;
@@ -441,9 +463,9 @@ nav {
     margin-left: 16px;
 }
 
-.img-green {
+/* .img-green {
     margin-bottom: 16px;
-}
+} */
 
 .my-wallet {
     position: absolute;
@@ -451,3 +473,172 @@ nav {
     top: 0px;
 
 }
+
+/* responsive */
+@media (min-width: 50rem) {
+    body {
+        font-family: 'Poppins', sans-serif;
+        /* margin: 0 150px; */
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    nav {
+        margin: 0 120px;
+        /* width: 100%; */
+        /* padding: 24px 20px; */
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    button {
+        width: 160px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .bt-signup {
+        max-width: none;
+        color: var(--white);
+        background: linear-gradient(to right, #4F8E0C, #1598D1);
+        /* padding: 14px; */
+        margin-left: 1rem;
+    }
+
+    .bt-login {
+        all: unset;
+        font-size: 14px;
+        font-family: 'Product Sans', sans-serif;
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    .style-titles {
+        justify-content: flex-start;
+    }
+
+    .invoice-title {
+        /* position: absolute; */
+        text-align: start;
+        height: 50%;
+    }
+
+    .get-started.blue {
+        background: var(--blue);
+        margin: 24px 0;
+    }
+
+    .images {
+        width: 40%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #58B4C9 0%, #77C5D8 96.28%);
+        border: none;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(14, 64, 53, 0.16);
+    }
+
+    section {
+        margin: 0 120px;
+    }
+
+    .invoice-images {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 45%;
+    }
+
+    .get-started {
+        padding: 12px;
+    }
+
+    .text {
+        width: 55%;
+        text-align: start;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    section {
+        margin: 0 60px;
+    }
+    .images {
+        display: none;
+    }
+
+    .images-light {
+        display: none;
+    }
+}
+
+@media (max-width: 1390px) {
+    .images-light {
+        display: none;
+    }
+
+    .images-yellow {
+        width: 30%;
+    }
+
+    .img-yellow {
+        height: 90%;
+    }
+
+    .images-pink {
+        width: 40%;
+    }
+
+    .img-pink {
+        height: 70%;
+    }
+
+    .images-green {
+        width: 25%;
+    }
+
+    .img-green {
+        height: 80%;
+        bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+ // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... } */
