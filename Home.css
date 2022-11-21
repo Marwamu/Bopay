@@ -1177,7 +1177,6 @@ input:focus {
     }
 
     .mobile-app {
-        background: url('./Images/Group837.png');
         background: url('/Images/Group837.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -1405,7 +1404,7 @@ input:focus {
     }
 
     .mobile-app {
-       background: url('/Images/Group837.png');
+        background: url('/Images/Group837.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 40vh;
