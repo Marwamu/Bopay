@@ -437,7 +437,7 @@ section {
 
 .steps {
     margin: 72px 40px 0 40px;
-    background-image: url('./Images/Group 830.png');
+    background-image: url('./Images/Group830.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -1178,6 +1178,7 @@ input:focus {
 
     .mobile-app {
         background: url('./Images/Group837.png');
+        background: url('/Images/Group837.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 40vh;
@@ -1404,7 +1405,7 @@ input:focus {
     }
 
     .mobile-app {
-        background: url('./Images/Group837.png');
+       background: url('/Images/Group837.png');
         background-repeat: no-repeat;
         background-size: cover;
         height: 40vh;
