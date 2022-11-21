@@ -437,7 +437,7 @@ section {
 
 .steps {
     margin: 72px 40px 0 40px;
-    background-image: url('./Images/Group830.png');
+    background-image: url('/Images/Group830.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 50vh;
@@ -605,7 +605,7 @@ section {
 }
 
 .mobile-app {
-    background: url('./Images/Group837.png');
+    background: url('/Images/Group837.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vh;
