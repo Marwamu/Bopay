@@ -29,8 +29,13 @@ body {
     font-weight: 400;
 }
 
+a:hover {
+    cursor: pointer;
+    color: var(--dark-blue);
+}
 
 button {
+    cursor: pointer;
     font-family: 'Product Sans', sans-serif;
     font-weight: 700;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
