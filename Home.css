@@ -1369,7 +1369,7 @@ input:focus {
 
     .features-right-row {
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
         /* border: none; */
     }
 
