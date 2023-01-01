@@ -539,11 +539,6 @@ section {
     justify-content: space-between;
 }
 
-.arrows {
-    /* display: flex;
-    justify-content: flex-end; */
-}
-
 .arrow-svg-step {
     background-color: white;
     padding: 4px;
@@ -553,9 +548,6 @@ section {
     border-radius: 50px;
 }
 
-.arrow-svg-step:hover {
-    /* background-color: var(--gray); */
-}
 
 .step-images {
     display: none;
@@ -1369,7 +1361,6 @@ input:focus {
 
     .features-right-row {
         flex-direction: column;
-        /* width: 100%; */
         /* border: none; */
     }
 
