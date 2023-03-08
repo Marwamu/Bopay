@@ -495,6 +495,8 @@ section {
 
 .style-titles.step {
     display: flex;
+    width: 90%;
+    margin-top: 20px;
     /* margin-bottom: 32px; */
 }
 
@@ -539,15 +541,31 @@ section {
     justify-content: space-between;
 }
 
+.arrows {
+    display: flex;
+    flex-direction: row;
+}
+
+.arro {
+    width: 65%;
+}
+
 .arrow-svg-step {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     padding: 4px;
     margin-left: 10px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
 
+.fade {
+    display: none;
+}
 
 .step-images {
     display: none;
@@ -565,6 +583,7 @@ section {
 }
 
 .step-top {
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -863,6 +882,7 @@ input:focus {
     }
 
     .create-step {
+        /* height: 40vh; */
         flex-direction: column;
         justify-content: space-around;
         margin: 0 50px;
@@ -882,6 +902,7 @@ input:focus {
 
     .step-para {
         display: flex;
+        margin-top: 50px;
         /* justify-content: space-between; */
         text-align: start;
         color: var(--white);
@@ -889,11 +910,18 @@ input:focus {
     }
 
     .steps-text {
+        margin-top: 50px;
         justify-content: flex-start;
     }
 
     .step-h1 {
-        width: 20%;
+
+        width: 45%;
+        text-align: start;
+    }
+
+    .fade {
+        display: none;
     }
 
     .step-images {
@@ -917,7 +945,7 @@ input:focus {
     .step-bottom {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 90%;
         align-items: center;
 
     }
